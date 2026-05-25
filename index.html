@@ -91,7 +91,7 @@ textarea{min-height:120px;resize:vertical}
     <div class="header">
         <div class="level-badge">CEFR Level B1 - Intermediate</div>
         <h1>📝 PS3 Final Test <span class="badge">30 Questions</span></h1>
-        <p>Practical Skills 3 - Term 1/2026</p>
+        <p>Practical Skills 3 - Term 3 / 2026</p>
     </div>
 
     <div class="section active" id="start">
@@ -232,7 +232,7 @@ textarea{min-height:120px;resize:vertical}
             <a href="https://f4m0tbsjd6f.typeform.com/to/niGGm7g7" target="_blank" class="link-btn survey">📊 Take Our Survey</a>
             <a href="https://sqaeducation.org/upgrade-to-premium/" target="_blank" class="link-btn premium">⭐ Upgrade to Premium</a>
             <a href="https://sqaeducation.org/login/" target="_blank" class="link-btn waitlist">⏳ Current Student Waitlist</a>
-            <div class="applied-msg">✅ Already applied? See you next term! 🎓</div><button class="btn btn-secondary" onclick="location.reload()" style="margin-top:15px;background:#f5f5f5;color:#333;border:2px solid #ddd;cursor:pointer">← Back to Start</button>
+            <div class="applied-msg">✅ Already applied? See you next term! 🎓</div>
         </div>
     </div>
 </div>
@@ -394,7 +394,7 @@ function submitToTeacher(){
     const writingContent=writingText+(typeof tabSwitchCount!=='undefined'&&tabSwitchCount>0?'\n\n[INTEGRITY NOTE: Student left test tab '+tabSwitchCount+' time(s)]':'')+report;
 
     const teacherVal=document.getElementById('teacherName')?document.getElementById('teacherName').value:'';
-    // Final Test has no Reading or Vocab category — all 31 questions count as Grammar
+    // Final Test has no Reading or Vocab category — all 30 questions count as Grammar
     // Writing is NOT auto-scored → teacher grades manually
     // No speaking section
     const submissionData={
@@ -434,7 +434,7 @@ function submitToTeacher(){
     function buildFormData(){
         // Unified B1 homework form mapping (matches Classes 9/11/12/13/14 + Review 15):
         //   entry.518151516  → B  Student Name
-        //   entry.710610284  → C  Class (3088/3090/3095/3098/3101)
+        //   entry.710610284  → C  Class
         //   entry.864654596  → D  Session ('16' for Final)
         //   entry.258952242  → E  Reading score ('0/0' — no Reading on Final)
         //   entry.859150584  → F  Vocab score ('0/0' — uncategorized; all in Grammar)
